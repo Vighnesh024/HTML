@@ -1,0 +1,92 @@
+/* Add your CSS styles for Step 2 here */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9; /* Light grey background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff; /* White container background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: calc(100% - 20px); /* Adjusting for padding */
+    padding: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-color: #f2f2f2; /* Light grey input background */
+    color: #333; /* Dark grey text color */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="submit"]:hover {
+    background-color: #1a73e8; /* Google blue on hover/focus */
+    color: #fff; /* White text color on hover/focus */
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.3); /* Blue border on hover/focus */
+}
+
+input[type="password"]::placeholder,
+input[type="email"]::placeholder{
+    color: #999;
+    text-align: center; /* Center the placeholder text */
+}
+
+input[type="password"]:focus::placeholder {
+    color: transparent;
+}
+input[type="submit"] {
+    background-color: #1a73e8; /* Google blue */
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0d47a1; /* Darker blue on hover */
+}
+
+.links {
+    font-size: 14px;
+    color: #757575; /* Grey color for links */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 90%;
+    }
+}

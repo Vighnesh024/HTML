@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 2: Account Setup</title>
+    <link rel="stylesheet" href="./step2.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Step 2: Account Setup</h2>
+        <form action="/submit_form" method="post" id="step2Form">
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email">
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Enter Your Confirm Password">
+            </div>
+
+            <!-- JavaScript to retrieve first name and last name from URL parameters -->
+            <script src="./step2.js">
+              
+            </script>
+            
+            <input type="submit" value="Create Account">
+        </form>
+    </div>
+</body>
+</html>
